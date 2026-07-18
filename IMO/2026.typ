@@ -2,7 +2,7 @@
 #show math.frac: math.display
 #show math.equation.where(block: false): math.display
 #import "@preview/simple-plot:0.9.0": plot
-#set page(width: 18cm, height: auto, margin: 0.5cm)
+#set page(width: 18cm, height: auto, margin: auto)
 #set math.mat(align: center)
 
 *Probem 1*
@@ -11,15 +11,11 @@
 
 *b)* Let the numbers initially written on the board be $a_1, a_2, dots, a_2026$. 
 
-*Lemma 1:* At any time, for each $a_i$, there exist a number $x$ on the board such that $a_i | x$.
+*Lemma:* Let $max(v_p) = max(v_p (a_1), v_p (a_2), dots, v_p (a_2026))$. At any time, there exist a number $x$ on the board such that $v_p (x) = max(v_p)$ for any prime number $p$.
 
-_Prove:_ Initally we have $x = a_i$. After each operation, if $x$ is paired with $y$, we assign $x = lcm(x, y)/gcd(x, y)$ and we still have $a_i | lcm(x, y)/gcd(x, y)$, which finishes the proof.
+_Prove:_ Initally we have $x = a_i$, where $v_p (a_i) = max(v_p)$. After each operation, if $x$ is paired with $y$, we assign $x = lcm(x, y)/gcd(x, y)$ and we still have $v_p (lcm(x, y)/gcd(x, y)) = max(v_p)$.
 
-*Lemma 2:* Let $max(v_p) = max(v_p (a_1), v_p (a_2), dots, v_p (a_2026))$. At any time, there exist a number $x$ on the board such that $v_p (x) = max(v_p)$ for any prime number $p$.
-
-_Prove:_ Similar to Lemma 1, we have $v_p (lcm(x, y)/gcd(x, y)) = max(v_p)$, where $x = a_i$ and $v_p (a_i) = max(v_p)$.
-
-Back to the problem, apply Lemma 1 and Lemma 2 for the last number $M$ on the board we have Q.E.D.
+Back to the problem, apply Lemma 1 and Lemma 2 for the last number $M$ on the board we have $M = lcm(a_1, a_2, dots, a_2026)$, so we have Q.E.D.
 
 *Problem 4*
 
