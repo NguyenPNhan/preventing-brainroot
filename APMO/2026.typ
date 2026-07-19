@@ -8,7 +8,7 @@
 
 *Problem 1*
 
-WLOG, assume that $a <= p$. 
+Without loss of generality, assume that $a <= p$. 
 
 If $a >= 4$, we have $a! + p! equiv 0 (mod 4)$. However, we have $m^o + 26 equiv 1, 2, 3 (mod 4)$, so $a < 4$.
 
