@@ -24,7 +24,7 @@ It is trivial that Shan-Yu wins if $theta > 90 degree$, since Shan-Yu can always
 
 If $theta = (180 degree)/n$, where $n >= 2$, Mulan chooses point $P$ such that the segment containing that point is divided into $2$ angles: $theta$ and $180 degree - theta$. Hence, Shan-Yu is forced to choose the latter one, so Mulan can continue to divide that angle to $(theta, 180 degree - 2theta) -> (theta, 180 degree - 3theta)$ and so on. At one time, we reach $180 degree - k theta = theta$, so Mulan wins. 
 
-If $theta != (180 degree)/n$, where $n in bb(Z)^+$, Shen-Yu first creates a triangle $cal(T)$ that contains no angle that has the form $k theta (k in bb(Z)^+)$. 
+If $theta != (180 degree)/n$, where $n in bb(Z)^+$, Shan-Yu first creates a triangle $cal(T)$ that contains no angle that has the form $k theta (k in bb(Z)^+)$. 
 
 #cetz.canvas({
   import cetz.draw: *
@@ -48,9 +48,9 @@ If $theta != (180 degree)/n$, where $n in bb(Z)^+$, Shen-Yu first creates a tria
   content((3, -0.18), $P$)
 })
 
-If $angle A P C = k theta$, Shen-Yu chooses $triangle A P B$, since $angle A P B = 180 degree - angle A P C != k' theta $ and as $angle A B P + angle B A P = angle A P C = k theta$  we also have $angle B A P != k'' theta$. The argument is similar when $angle A P B = k theta$.
+If $angle A P C = k theta$, Shan-Yu chooses $triangle A P B$, since $angle A P B = 180 degree - angle A P C != k' theta $ and as $angle A B P + angle B A P = angle A P C = k theta$  we also have $angle B A P != k'' theta$. The argument is similar when $angle A P B = k theta$.
 
-If $angle B A P = k theta$, Shen-Yu chooses $triangle A P C$, since $angle P A C = angle B A C - angle B A P = angle B A C - k theta != k' theta$ and $angle A P C = angle B A P + angle A B P = k theta + angle A B P != k'' theta$. The argument is similar when $angle C A P = k theta$.
+If $angle B A P = k theta$, Shan-Yu chooses $triangle A P C$, since $angle P A C = angle B A C - angle B A P = angle B A C - k theta != k' theta$ and $angle A P C = angle B A P + angle A B P = k theta + angle A B P != k'' theta$. The argument is similar when $angle C A P = k theta$.
 
-So Shen-Yu wins if $theta != (180 degree)/n$, where $n in bb(Z)^T$, otherwise Mulan wins.
+So Shan-Yu wins if $theta != (180 degree)/n$, where $n in bb(Z)^T$, otherwise Mulan wins.
 
