@@ -52,5 +52,5 @@ If $angle A P C = k theta$, Shan-Yu chooses $triangle A P B$, since $angle A P B
 
 If $angle B A P = k theta$, Shan-Yu chooses $triangle A P C$, since $angle P A C = angle B A C - angle B A P = angle B A C - k theta != k' theta$ and $angle A P C = angle B A P + angle A B P = k theta + angle A B P != k'' theta$. The argument is similar when $angle C A P = k theta$.
 
-So Shan-Yu wins if $theta != (180 degree)/n$, where $n in bb(Z)^T$, otherwise Mulan wins.
+So Shan-Yu wins if $theta != (180 degree)/n$, where $n in bb(Z)^+$, otherwise Mulan wins.
 
