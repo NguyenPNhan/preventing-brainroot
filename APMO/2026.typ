@@ -20,3 +20,17 @@ If $a = 3$, we solve $p! = m^o + 20$. Trivially, we have $p >= 4$. If $p = 4$, w
 
 The solution are $(a, p, m, o) in {(4, 3, 2, 2), (3, 4, 2, 2), (5, 3, 10, 2), (3, 5, 10, 2)}$.
 
+*Problem 2*
+
+Fix an arbitrary positive integer $x$ in the $n$-element set. Define $B_i = 1$ if $x in A_i$, else $B_i = 0$.
+
+Let $c_00$ is the number of pairs $(i, i + 1)$ where $B_i = B_(i + 1) = 0$ (also consider $B_(2^n) = B_1 = 0$). Define similarly for $c_01, c_10, c_11$.
+
+Since the circle start and end with $B_1$, when $B_1$ transforms from $1 -> 0$ or vice versa, it must transform back. Hence, we have $c_01 = c_11$. As $x$ appears in half of $A_1, A_2, dots, A_(2^n)$, so we have $c_00 = 2^(n - 1) - c_01$ and $c_11 = 2^(n - 1) - c_10$, which yields $c_01 = c_10$.
+
+Iterate for all $x$ in the $n$-element set, we have $abs(A_1 inter A_2) + dots + abs(A_(2^n) inter A_1) = abs(overline(A_1) inter overline(A_2)) + dots + abs(overline(A_(2^n)) inter overline(A_1))$.
+
+Moreover, consider $1/2 sum_(i = 1)^(2^n) (abs(A_i inter A_(i + 1)) + abs(overline(A_i) inter overline(A_(i + 1))))$, where $A_(2^n + 1) = A_1$. A term of this sum is $0$ only for two sets that are complement, so no two consecutive terms are equal to $0$. Therefore, we have
+
+$ abs(A_1 inter A_2) + dots + abs(A_(2^n) inter A_1) = 1/2 sum_(i = 1)^(2^n) (abs(A_i inter A_(i + 1)) + abs(overline(A_i) inter overline(A_(i + 1)))) >= 2^(n - 2) $
+which finishes the proof.
