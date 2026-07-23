@@ -27,6 +27,14 @@ $ D_n = det mat(3, 1, 1, 1, dots, 1; -2, 3, 0, 0, dots, 0; -2, 0, 4, 0, dots, 0;
 
 For $2 <= i <= n - 1$, adding $2/(i + 1)$ times the $i$-th column to the first column, we have
 
-$ D_n = det mat(3 + 2/3 + 2/4 + dots + 2/n, 1, 1, 1, dots, 1; 0, 3, 0, 0, dots, 0; 0, 0, 4,0, dots, 0; 0, 0, 0, 5, dots, 0; dots.v, dots.v, dots.v, dots.v, dots.down, dots.v; 0, 0, 0, 0, dots, 0) = n!(1 + 1/2 + 1/3 + dots + 1/n). $
+$ D_n = det mat(3 + 2/3 + 2/4 + dots + 2/n, 1, 1, 1, dots, 1; 0, 3, 0, 0, dots, 0; 0, 0, 4,0, dots, 0; 0, 0, 0, 5, dots, 0; dots.v, dots.v, dots.v, dots.v, dots.down, dots.v; 0, 0, 0, 0, dots, n) = n!(1 + 1/2 + 1/3 + dots + 1/n). $
 
 So $D_n/n! = 1 + 1/2 + dots + 1/n$ diverges to $+infinity$ by the $p$-test, hence the set is unbounded.
+
+*Problem 4*
+
+Fixing $x$ and substituting $u = x y$, we have
+
+$ B &= integral_0^1 integral_0^1 (x y)^(x y) dif y dif x \ &= integral_0^1 integral_0^x u^u/x dif u dif x \ &= integral_0^1 integral_u^1 u^u/x dif x dif u \ &= -integral_0^1 u^u (ln u) dif u. $
+
+Hence, we have $A - B = integral_0^1 x^x (1 + ln x) dif x = lr(x^x|)_(0^+)^1 = 0$, leading to $A = B$.
