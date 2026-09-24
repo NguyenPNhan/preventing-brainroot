@@ -14,9 +14,20 @@ Giả sử dãy bị chặn trên, tức là tồn tại $L = lim a_n > 0$. Th�
 
 *Câu 2*
 
-a) Xét x, y thoả $f(x) = f(y)$. Từ (i) có $f(f(x)f(1)) = x$ và $f(f(y)f(1)) = y => x = y$. Vậy $f$ đơn ánh. Thay $a = 1$ vào (ii) thì $f(2028) = 2028$. Thay $m = 1$ và $n = 2028$ vào (i) thì $f(f(1)f(2028)) = 2028 => f(f(1)f(2028)) = f(2028) => f(1)f(2028) = 2028 => f(1) = 1$.
+a) Xét x, y thoả $f(x) = f(y)$. Từ (i) có $f(f(x)f(1)) = x$ và $f(f(y)f(1)) = y => x = y$. Vậy $f$ đơn ánh. Thay $a = 1$ vào (ii) thì $f(2028) = 2028$. Thay $m = 1$ và $n = 2028$ vào (i) thì $f(f(1)f(2028)) = 2028 => f(f(1)f(2028)) = f(2028) => f(1)f(2028) = 2028 => f(1) = 1$ (vì $f(2028) = 2028$).
 
-b)
+b) Xét số nguyên dương $x$ bất kì, ta có $f(f(x)f(1)) = x$ theo (i) $=> f(f(x)) = x$ (vì $f(1) = 1$), hay $f circle.small f = id$. Kết hợp với (i) có $f(m n) = f(m)f(n)$ với mọi số nguyên dương $m, n$, hay $f$ là hàm nhân tính hoàn toàn.
+
+Tiếp đó, vì $f circle.small f = id$ nên $f$ toàn ánh. Giả sử $f(q) = u v$ với $q$ là số nguyên tố, $u, v$ là hai số nguyên dương lớn hơn $1$. Vì $f$ toàn ánh nên tồn tại $f^(-1)(u)$ thoả $f(f^(-1)(u)) = u$, tương tự với $v$. Từ đó, vì $f$ là hàm nhân tính hoàn toàn nên 
+$ f(q) = f(f^(-1)(u))f(f^(-1)(v)) \ => q = f(f(q)) = f(f(f^(-1)(u))f(f^(-1)(v))) = f^(-1)(u)f^(-1)(v) $
+
+Mặc khác dễ có $f^(-1)(u), f^(-1)(v) > 1$ dẫn đến mâu thuẫn vì $q$ là số nguyên tố. Vậy $f(q)$ là số nguyên tố.
+
+Xét số nguyên tố $q$ thoả $q != 2027$. Ta có $2027 | q^2026 - 1$ theo định lý Fermat nhỏ. Từ đó theo (ii) thì $f(q^2026) = q^2026$. Vì $f$ là hàm nhân tính hoàn toàn, ta cũng có $f(q^2026) = f(q)^2026$, dẫn đến $f(q) = q$. 
+
+Giả sử $f(2027) = p != 2027$, ta biết $f(2027) = p$ cũng là một số nguyên tố. Lại có $f(f(2027)) = 2027 => f(p) = 2027$, mà $p != 2027$ nên mâu thuẫn. Vậy $f(2027) = 2027$. 
+
+Vì $f$ là hàm nhân tính hoàn toàn nên với mọi số nguyên dương $n = p_1^a_1 p_2^a_2 dots p_k^a_k $ thì $f(n) = f(p_1)^a_1 dots f(p_k)^a_k = n$. Vậy $f(n) = n$ là hàm số duy nhất thoả mãn. 
 
 *Câu 3*
 
