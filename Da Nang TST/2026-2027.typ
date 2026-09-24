@@ -38,7 +38,7 @@ a) Từ (i), dễ thấy những hoán vị thoả mãn có $a_1 < a_2 < dots < 
 Tiếp đó, ta đếm phần bù của (ii). Xét $2$ trường hợp sau:
 - $X = \{a_(i + 1), dots, a_2026\}$ chứa toàn số chẵn. Với mỗi số lẻ ta chỉ có thể đặt vào bên trái $a_i$. Với mỗi số chẵn ta có thể đặt vào cả trái và phải $a_i$. Vì có $1012$ số chẵn (không tính $2026$) nên có tổng cộng $2^1012 - 1$ ($-1$ do trường hợp $(1, 2, dots, 2026)$) cách đặt.
 
-- $X = \{a_(i + 1\, dots, a_2026}$ chứa toàn số lẻ. Tương tự có $2^1013 - 1$ cách đặt.
+- $X = \{a_(i + 1)\, dots, a_2026}$ chứa toàn số lẻ. Tương tự có $2^1013 - 1$ cách đặt.
 
 Vậy số hoán vị thoả mãn cả (i) và (ii) là $2^2025 - 1 - (2^1012 - 1) - (2^1013 - 1) = 2^2025 - 3 dot 2^1012 + 1$.
 
