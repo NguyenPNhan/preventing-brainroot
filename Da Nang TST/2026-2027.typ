@@ -41,3 +41,9 @@ Tiếp đó, ta đếm phần bù của (ii). Xét $2$ trường hợp sau:
 - $X = \{a_(i + 1\, dots, a_2026}$ chứa toàn số lẻ. Tương tự có $2^1013 - 1$ cách đặt.
 
 Vậy số hoán vị thoả mãn cả (i) và (ii) là $2^2025 - 1 - (2^1012 - 1) - (2^1013 - 1) = 2^2025 - 3 dot 2^1012 + 1$.
+
+b) Gọi $f(n)$ là số hoán vị như vậy. Ta có $f(0) = 0$. Xét $2$ trường hợp sau:
+- Đặt $n$ ở cuối, lúc này số lượng hoán vị là $f(n - 1)$.
+- Đặt $n$ ở giữa, lập luận tương tự câu a), số lượng hoán vị là $2^(n - 1) - 1$.
+
+Vậy $f(n) = 2^(n - 1) - 1 + f(n - 1)$ với $n >= 1$. Bằng quy nạp ta có $f(n) = 2^0 + 2^1 + dots + 2^(n - 1) - n = 2^n - n - 1$.
