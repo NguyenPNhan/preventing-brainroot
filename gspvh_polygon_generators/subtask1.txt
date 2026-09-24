@@ -1,0 +1,12 @@
+gen 1 1 1 random point zero random > $
+gen 2 1 1 path fixed max random > $
+gen 3 3 2 path mixed small gamma1 > $
+gen 7 10 5 binary mixed random smallgamma > $
+gen 10 20 10 star edge alt mixed > $
+gen 25 40 10 broom mixed index maxgamma > $
+gen 50 100 10 caterpillar random random random > $
+gen 100 100 10 random mixed random mixed > $
+gen 100 1 10 path fixed max gamma1 > $
+gen 2 100 10 path same random smallgamma > $
+gen 100 100 1 binary point zero random > $
+gen 99 100 10 star same max maxgamma > $

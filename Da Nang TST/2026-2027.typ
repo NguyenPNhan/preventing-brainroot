@@ -14,7 +14,9 @@ Giả sử dãy bị chặn trên, tức là tồn tại $L = lim a_n > 0$. Th�
 
 *Câu 2*
 
-a) Giả sử tồn tại $x != y$ thoả $f(x) = f(y) => f(f(x)f(1)) = f(f(y)f(1))$. Mặc khác từ (i) lại có $f(f(x)f(1)) = x != f(f(y)f(1)) = y => x = y$. Vậy $f$ đơn ánh.
+a) Xét x, y thoả $f(x) = f(y)$. Từ (i) có $f(f(x)f(1)) = x$ và $f(f(y)f(1)) = y => x = y$. Vậy $f$ đơn ánh. Thay $a = 1$ vào (ii) thì $f(2028) = 2028$. Thay $m = 1$ và $n = 2028$ vào (i) thì $f(f(1)f(2028)) = 2028 => f(f(1)f(2028)) = f(2028) => f(1)f(2028) = 2028 => f(1) = 1$.
+
+b)
 
 *Câu 3*
 
@@ -28,3 +30,14 @@ b) Dễ thấy $k = 1$ thoả (xét $n$ là số nguyên tố luôn thoả, mặ
 $ phi(n_0 + k - 1) <= n_0 + k - 1 - (n_0 + k - 1)/p <= n_0 + k - 1 - sqrt(n_0 + k - 1). $
 
 Chọn $n_0$ sao cho $sqrt(n_0 + k - 1) > 2k - 1$ thì $phi(n_0 + k - 1) < n_0 + k - 1 - (2k - 1) = n_0 - k$, vô lý. Vậy để phương trình có vô số nghiệm nguyên dương $n$ thì $k = 1$.
+
+*Câu 6*
+
+a) Từ (i), dễ thấy những hoán vị thoả mãn có $a_1 < a_2 < dots < a_i > a_(i + 1) > dots > a_2026$. Với mỗi phần tử $x in \{1, 2, dots, 2025\}$, ta có $2$ lựa chọn là đặt nó bên trái $a_i$ hoặc đặt nó bên phải $a_i$, vì vậy nên có tổng cộng $2^2025 - 1$ hoán vị như vậy ($-1$ do trường hợp $(1, 2, dots, 2026)$). Vậy số hoán vị thoả mãn (i) là $2^2025 - 1$.
+
+Tiếp đó, ta đếm phần bù của (ii). Xét $2$ trường hợp sau:
+- $X = \{a_(i + 1), dots, a_2026\}$ chứa toàn số chẵn. Với mỗi số lẻ ta chỉ có thể đặt vào bên trái $a_i$. Với mỗi số chẵn ta có thể đặt vào cả trái và phải $a_i$. Vì có $1012$ số chẵn (không tính $2026$) nên có tổng cộng $2^1012 - 1$ ($-1$ do trường hợp $(1, 2, dots, 2026)$) cách đặt.
+
+- $X = \{a_(i + 1\, dots, a_2026}$ chứa toàn số lẻ. Tương tự có $2^1013 - 1$ cách đặt.
+
+Vậy số hoán vị thoả mãn cả (i) và (ii) là $2^2025 - 1 - (2^1012 - 1) - (2^1013 - 1) = 2^2025 - 3 dot 2^1012 + 1$.
