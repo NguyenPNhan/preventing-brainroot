@@ -27,7 +27,7 @@ Xét số nguyên tố $q$ thoả $q != 2027$. Ta có $2027 | q^2026 - 1$ theo �
 
 Giả sử $f(2027) = p != 2027$, ta biết $f(2027) = p$ cũng là một số nguyên tố. Lại có $f(f(2027)) = 2027 => f(p) = 2027$, mà $p != 2027$ nên mâu thuẫn. Vậy $f(2027) = 2027$. 
 
-Vì $f$ là hàm nhân tính hoàn toàn nên với mọi số nguyên dương $n = p_1^a_1 p_2^a_2 dots p_k^a_k $ thì $f(n) = f(p_1)^a_1 dots f(p_k)^a_k = n$. Vậy $f(n) = n$ là hàm số duy nhất thoả mãn. 
+Vì $f$ là hàm nhân tính hoàn toàn nên với mọi số nguyên dương $n = p_1^a_1 p_2^a_2 dots p_k^a_k $ thì $f(n) = f(p_1)^(a_1) dots f(p_k)^(a_k) = n$. Vậy $f(n) = n$ là hàm số duy nhất thoả mãn. 
 
 *Câu 3*
 
